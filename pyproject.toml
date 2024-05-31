@@ -1,0 +1,28 @@
+[tool.poetry]
+name = "flask-full-course"
+version = "0.1.0"
+description = "Flask full course"
+authors = ["Arun Khattri"]
+license = "GPL_3_or_later"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+flask = "^3.0.3"
+sqlalchemy = "^2.0.30"
+
+
+[tool.poetry.group.dev.dependencies]
+black = "^24.4.2"
+pylint = "^3.2.2"
+isort = "^5.13.2"
+pytest = "^8.2.1"
+ipython = "^8.25.0"
+python-lsp-server = "^1.11.0"
+mypy = "^1.10.0"
+flake8 = "^7.0.0"
+ruff = "^0.4.6"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

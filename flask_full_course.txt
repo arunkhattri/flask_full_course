@@ -1,0 +1,20 @@
+Flask full course: build stunning web apps fast; python flask tutorial
+code with josh
+https://www.youtube.com/watch?v=45P3xQPaYxc&t=625s
+
+🎬 Timestamps:
+00:00 | Introduction to The Course
+1:45 | UnSponsored SponsorShip
+2:42 | Introduction to Flask
+10:20 | Create a Virtual Environment
+13:50 | Setting Up a Flask Project
+22:14 | An Index HTML Page
+25:28 | HTML Template Inheritance 
+32:20 | Configure SQLAlchemy
+39:48 | HTTP Requests with POST and GET
+45:50 | Send Data to HTML
+51:55 | Delete an Item from a Database
+56:00 | Edit an Item in a Database
+01:07:00 | Add Sassy CSS (SCSS)
+01:16:30 | Deploy a Flask Application
+01:24:37 | Cool Down Outro

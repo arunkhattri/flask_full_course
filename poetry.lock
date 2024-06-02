@@ -147,6 +147,18 @@ files = [
 ]
 
 [[package]]
+name = "enum34"
+version = "1.1.10"
+description = "Python 3.4 Enum backported to 3.3, 3.2, 3.1, 2.7, 2.6, 2.5, and 2.4"
+optional = false
+python-versions = "*"
+files = [
+    {file = "enum34-1.1.10-py2-none-any.whl", hash = "sha256:a98a201d6de3f2ab3db284e70a33b0f896fbf35f8086594e8c9e74b909058d53"},
+    {file = "enum34-1.1.10-py3-none-any.whl", hash = "sha256:c3858660960c984d6ab0ebad691265180da2b43f07e061c0f8dca9ef3cffd328"},
+    {file = "enum34-1.1.10.tar.gz", hash = "sha256:cce6a7477ed816bd2542d03d53db9f0db935dd013b70f336a95c73979289f248"},
+]
+
+[[package]]
 name = "executing"
 version = "2.0.1"
 description = "Get the currently executing AST node of a frame, and other information"
@@ -197,6 +209,36 @@ Werkzeug = ">=3.0.0"
 [package.extras]
 async = ["asgiref (>=3.2)"]
 dotenv = ["python-dotenv"]
+
+[[package]]
+name = "flask-scss"
+version = "0.5"
+description = "Adds support for scss files to Flask applications"
+optional = false
+python-versions = "*"
+files = [
+    {file = "Flask-Scss-0.5.tar.gz", hash = "sha256:21e28c3b03fd5905c909085578a4a3c0b250ddb061214eb3775037fd78f74782"},
+    {file = "Flask_Scss-0.5-py3-none-any.whl", hash = "sha256:6155657a6b48630585a00666b69d7f443b4432ab9e4fe87f27e1583abe047125"},
+]
+
+[package.dependencies]
+Flask = "*"
+pyScss = "*"
+
+[[package]]
+name = "flask-sqlalchemy"
+version = "3.1.1"
+description = "Add SQLAlchemy support to your Flask application."
+optional = false
+python-versions = ">=3.8"
+files = [
+    {file = "flask_sqlalchemy-3.1.1-py3-none-any.whl", hash = "sha256:4ba4be7f419dc72f4efd8802d69974803c37259dd42f3913b0dcf75c9447e0a0"},
+    {file = "flask_sqlalchemy-3.1.1.tar.gz", hash = "sha256:e4b68bb881802dda1a7d878b2fc84c06d1ee57fb40b874d3dc97dabfa36b8312"},
+]
+
+[package.dependencies]
+flask = ">=2.2.5"
+sqlalchemy = ">=2.0.16"
 
 [[package]]
 name = "greenlet"
@@ -555,6 +597,20 @@ qa = ["flake8 (==5.0.4)", "mypy (==0.971)", "types-setuptools (==67.2.0.1)"]
 testing = ["docopt", "pytest"]
 
 [[package]]
+name = "pathlib2"
+version = "2.3.7.post1"
+description = "Object-oriented filesystem paths"
+optional = false
+python-versions = "*"
+files = [
+    {file = "pathlib2-2.3.7.post1-py2.py3-none-any.whl", hash = "sha256:5266a0fd000452f1b3467d782f079a4343c63aaa119221fbdc4e39577489ca5b"},
+    {file = "pathlib2-2.3.7.post1.tar.gz", hash = "sha256:9fe0edad898b83c0c3e199c842b27ed216645d2e177757b2dd67384d4113c641"},
+]
+
+[package.dependencies]
+six = "*"
+
+[[package]]
 name = "pathspec"
 version = "0.12.1"
 description = "Utility library for gitignore style pattern matching of file paths."
@@ -708,6 +764,21 @@ tomlkit = ">=0.10.1"
 [package.extras]
 spelling = ["pyenchant (>=3.2,<4.0)"]
 testutils = ["gitpython (>3)"]
+
+[[package]]
+name = "pyscss"
+version = "1.4.0"
+description = "pyScss, a Scss compiler for Python"
+optional = false
+python-versions = "*"
+files = [
+    {file = "pyScss-1.4.0.tar.gz", hash = "sha256:8f35521ffe36afa8b34c7d6f3195088a7057c185c2b8f15ee459ab19748669ff"},
+]
+
+[package.dependencies]
+enum34 = "*"
+pathlib2 = "*"
+six = "*"
 
 [[package]]
 name = "pytest"
@@ -1076,4 +1147,4 @@ watchdog = ["watchdog (>=2.3)"]
 [metadata]
 lock-version = "2.0"
 python-versions = "^3.12"
-content-hash = "d3f483797de5a48385d247faa9732f66114c92c1ecd96ac1af4bb186dc3907d5"
+content-hash = "45c28ad53acf685f0487a3daded2d824149d6de973f74ec752d7818427fd6c26"

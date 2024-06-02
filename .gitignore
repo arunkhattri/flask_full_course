@@ -12,6 +12,9 @@
 
 !*.py
 !*.txt
+!*.html
+!*.css
+!*.scss
 !*.png
 !*.pdf
 !*.csv

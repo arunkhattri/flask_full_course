@@ -4,6 +4,7 @@ from config import DevConfig
 from flask_sqlalchemy import SQLAlchemy
 from datetime import datetime
 
+
 # My app
 app = Flask(__name__)
 app.config.from_object(DevConfig)

@@ -1,0 +1,33 @@
+{% extends "base.html" %} {% block head %}
+<title>My App</title>
+{% endblock %} {% block body %}
+<div class="px-1">
+  <h1 class="text-3xl font-medium title-font text-gray-900 py-2">Edit Task</h1>
+</div>
+
+<div class="py-2">
+  <form class="w-full" action="/update/{{task.id}}" method="POST">
+    <div class="col-span-full p-2">
+      <label
+        class="block tracking-wide text-gray-700 text-sm font-bold mb-2 p-3"
+        for="content"
+        >Content</label
+      >
+      <input
+        class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+        type="text"
+        name="content"
+        id="content"
+        value="{{ task.content }}"
+      />
+    </div>
+    <div class="flex items-center justify-between p-2 py-3">
+      <button
+        class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
+      >
+        Update
+      </button>
+    </div>
+  </form>
+</div>
+{% endblock %}
